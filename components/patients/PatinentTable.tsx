@@ -42,7 +42,7 @@ export default function PatientTable({ patients, onRefresh }: PatientTableProps)
       setCalling(null);
     }
   };
-  const API_BASE = process.env.NEXT_PUBLIC_API_BASE
+  const API_BASE = process.env.NEXT_PUBLIC_API_URL || "https://voiceagents.prescoai.com/bolna-api";
   const handleDelete = async (patient: Patient) => {
     if (!confirm(`Are you sure you want to delete ${patient.name}? This will delete all associated calls and transcripts.`)) {
       return;
