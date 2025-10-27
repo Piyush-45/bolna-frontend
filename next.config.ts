@@ -8,8 +8,7 @@ const nextConfig = {
     // ✅ Ignore ESLint errors during build
     ignoreDuringBuilds: true,
   },
-  basePath: '/bolna',
-  assetPrefix: '/bolna/',
+
 };
 
 module.exports = nextConfig;
