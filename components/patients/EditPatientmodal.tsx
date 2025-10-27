@@ -37,7 +37,7 @@ export default function EditPatientModal({
   const [questions, setQuestions] = useState<string[]>([]);
   const [showQuestionEditor, setShowQuestionEditor] = useState(false);
   const [loading, setLoading] = useState(false);
-  const API_BASE = process.env.NEXT_PUBLIC_API_BASE || 'http://localhost:8000';
+  const API_BASE = process.env.NEXT_PUBLIC_API_BASE
 
   // 🧠 Convert stored questions to editable string array safely
   const parseQuestions = (input: string[] | string | null): string[] => {
