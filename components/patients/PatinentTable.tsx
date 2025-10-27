@@ -146,12 +146,12 @@ export default function PatientTable({ patients, onRefresh }: PatientTableProps)
                         <History className="h-4 w-4 mr-1" />
                         History
                       </button>
-                      <button
+                      {/* <button
                         onClick={() => setEditingPatient(patient)}
                         className="inline-flex items-center px-3 py-2 border border-gray-300 text-sm leading-4 font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
                       >
                         <Edit className="h-4 w-4" />
-                      </button>
+                      </button> */}
                       <button
                         onClick={() => handleDelete(patient)}
                         disabled={deletingPatient === patient.id}
